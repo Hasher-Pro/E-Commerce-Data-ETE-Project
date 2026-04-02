@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'PostgreSql'"
 		},
+		"AzureDatabricksDeltaLake_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricksDeltaLake'"
+		},
 		"PostgreSql_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "localhost"
@@ -49,6 +53,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"AzureDatabricksDeltaLake_accessToken": {
+						"value": "[parameters('AzureDatabricksDeltaLake_accessToken')]"
 					},
 					"PostgreSql_password": {
 						"value": "[parameters('PostgreSql_password')]"
