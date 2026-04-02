@@ -1,0 +1,53 @@
+{
+	"name": "AzureDatabricksDeltaLakeDataset1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDatabricksDeltaLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureDatabricksDeltaLakeDataset",
+		"typeProperties": {
+			"database": "bronze",
+			"table": "customers_bronze"
+		},
+		"schema": [
+			{
+				"name": "customer_id",
+				"type": "integer"
+			},
+			{
+				"name": "first_name",
+				"type": "string"
+			},
+			{
+				"name": "last_name",
+				"type": "string"
+			},
+			{
+				"name": "email",
+				"type": "string"
+			},
+			{
+				"name": "phone",
+				"type": "string"
+			},
+			{
+				"name": "city",
+				"type": "string"
+			},
+			{
+				"name": "country",
+				"type": "string"
+			},
+			{
+				"name": "created_at",
+				"type": "timestamp"
+			},
+			{
+				"name": "updated_at",
+				"type": "timestamp"
+			}
+		]
+	}
+}
