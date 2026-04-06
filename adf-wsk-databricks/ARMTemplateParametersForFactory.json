@@ -5,10 +5,13 @@
 		"factoryName": {
 			"value": "adf-wsk-databricks"
 		},
+		"AzureDatabricksDeltaLake_accessToken": {
+			"value": ""
+		},
 		"PostgreSql_password": {
 			"value": ""
 		},
-		"AzureDatabricksDeltaLake_accessToken": {
+		"Staging linked service_accountKey": {
 			"value": ""
 		},
 		"PostgreSql_properties_typeProperties_server": {
@@ -19,6 +22,9 @@
 		},
 		"PostgreSql_properties_typeProperties_username": {
 			"value": "postgres"
+		},
+		"Staging linked service_properties_typeProperties_url": {
+			"value": "https://etedatabricks1.dfs.core.windows.net/"
 		}
 	}
 }

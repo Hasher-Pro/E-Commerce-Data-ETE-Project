@@ -7,13 +7,17 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-wsk-databricks"
 		},
+		"AzureDatabricksDeltaLake_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricksDeltaLake'"
+		},
 		"PostgreSql_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'PostgreSql'"
 		},
-		"AzureDatabricksDeltaLake_accessToken": {
+		"Staging linked service_accountKey": {
 			"type": "secureString",
-			"metadata": "Secure string for 'accessToken' of 'AzureDatabricksDeltaLake'"
+			"metadata": "Secure string for 'accountKey' of 'Staging linked service'"
 		},
 		"PostgreSql_properties_typeProperties_server": {
 			"type": "string",
@@ -26,6 +30,10 @@
 		"PostgreSql_properties_typeProperties_username": {
 			"type": "string",
 			"defaultValue": "postgres"
+		},
+		"Staging linked service_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://etedatabricks1.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -57,8 +65,14 @@
 					"AzureDatabricksDeltaLake_accessToken": {
 						"value": "[parameters('AzureDatabricksDeltaLake_accessToken')]"
 					},
+					"Staging linked service_accountKey": {
+						"value": "[parameters('Staging linked service_accountKey')]"
+					},
 					"PostgreSql_password": {
 						"value": "[parameters('PostgreSql_password')]"
+					},
+					"Staging linked service_properties_typeProperties_url": {
+						"value": "[parameters('Staging linked service_properties_typeProperties_url')]"
 					},
 					"PostgreSql_properties_typeProperties_server": {
 						"value": "[parameters('PostgreSql_properties_typeProperties_server')]"
